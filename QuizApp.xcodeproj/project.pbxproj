@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55F815BA25D07118009B1760 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F815B925D07118009B1760 /* Questions.swift */; };
+		55F815BE25D07441009B1760 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F815BD25D07441009B1760 /* QuizBrain.swift */; };
 		F0EE4BBD25C3C53A00482845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE4BBC25C3C53A00482845 /* AppDelegate.swift */; };
 		F0EE4BBF25C3C53A00482845 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE4BBE25C3C53A00482845 /* SceneDelegate.swift */; };
-		F0EE4BC125C3C53A00482845 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE4BC025C3C53A00482845 /* ViewController.swift */; };
+		F0EE4BC125C3C53A00482845 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE4BC025C3C53A00482845 /* QuizViewController.swift */; };
 		F0EE4BC425C3C53A00482845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EE4BC225C3C53A00482845 /* Main.storyboard */; };
 		F0EE4BC625C3C53B00482845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EE4BC525C3C53B00482845 /* Assets.xcassets */; };
 		F0EE4BC925C3C53B00482845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EE4BC725C3C53B00482845 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55F815B925D07118009B1760 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		55F815BD25D07441009B1760 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		F0EE4BB925C3C53A00482845 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EE4BBC25C3C53A00482845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0EE4BBE25C3C53A00482845 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F0EE4BC025C3C53A00482845 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0EE4BC025C3C53A00482845 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		F0EE4BC325C3C53A00482845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0EE4BC525C3C53B00482845 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0EE4BC825C3C53B00482845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55F815B625D070A4009B1760 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0EE4BC225C3C53A00482845 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55F815B725D070B4009B1760 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F0EE4BC025C3C53A00482845 /* QuizViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55F815B825D070C2009B1760 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55F815B925D07118009B1760 /* Questions.swift */,
+				55F815BD25D07441009B1760 /* QuizBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F0EE4BB025C3C53A00482845 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +87,9 @@
 			children = (
 				F0EE4BBC25C3C53A00482845 /* AppDelegate.swift */,
 				F0EE4BBE25C3C53A00482845 /* SceneDelegate.swift */,
-				F0EE4BC025C3C53A00482845 /* ViewController.swift */,
-				F0EE4BC225C3C53A00482845 /* Main.storyboard */,
+				55F815B825D070C2009B1760 /* Model */,
+				55F815B625D070A4009B1760 /* View */,
+				55F815B725D070B4009B1760 /* Controller */,
 				F0EE4BC525C3C53B00482845 /* Assets.xcassets */,
 				F0EE4BC725C3C53B00482845 /* LaunchScreen.storyboard */,
 				F0EE4BCA25C3C53B00482845 /* Info.plist */,
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0EE4BC125C3C53A00482845 /* ViewController.swift in Sources */,
+				55F815BE25D07441009B1760 /* QuizBrain.swift in Sources */,
+				F0EE4BC125C3C53A00482845 /* QuizViewController.swift in Sources */,
+				55F815BA25D07118009B1760 /* Questions.swift in Sources */,
 				F0EE4BBD25C3C53A00482845 /* AppDelegate.swift in Sources */,
 				F0EE4BBF25C3C53A00482845 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,8 +319,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7MN23CD5F;
+				DEVELOPMENT_TEAM = U42M2797DD;
 				INFOPLIST_FILE = QuizApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,15 +338,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7MN23CD5F;
+				DEVELOPMENT_TEAM = U42M2797DD;
 				INFOPLIST_FILE = QuizApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aancona.sfsu.edu.QuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
